@@ -1,0 +1,213 @@
+/*                                      بسم الله الرحمن الرحيم*/
+
+/*   M                  Main Divs                       */
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+.pd-y {
+    /* For padding all the div */
+
+    padding: 90px 0px;
+}
+
+.container {
+
+    width: 80%;
+    margin: auto;
+}
+
+.section-header {
+
+    text-align: center;
+
+}
+
+.section-title {
+    color: black;
+    font-size: 24;
+    text-transform: capitalize;
+}
+
+.section-header .section-line {
+    margin: 16px auto 70px auto;
+    display: block;
+    height: 3px;
+    width: 30px;
+    background-color: crimson;
+
+}
+
+
+
+
+/*                                Navbar Edit                 */
+
+.container-fluid .nav-link, .container-fluid .navbar-brand {
+    color: whitesmoke;
+}
+
+.container-fluid .navbar-brand {
+    
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+.container-fluid .d-flex .form-control {
+    
+    width: 280px;
+}
+.container-fluid .d-flex .btn-outline-success {
+    margin-left: 20px;
+    border-color: whitesmoke;
+    color: whitesmoke
+}
+
+.container-fluid .d-flex .btn-outline-success:hover {
+
+    background-color: red;
+}
+
+.container-fluid {
+    background-color: rgba(0,0,0,0.4)
+    
+    
+}
+.container-fluid .nav-link:hover{
+    background-color: gainsboro;
+    color: white;
+}
+
+/*                                          Home Page                 */
+
+.home-page {
+    background-image: url(cake.jpeg);
+    background-size: cover;
+    height: 70vh;
+
+}
+.home-class {
+    
+    height: 70vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.home-class h1 {
+    opacity: 0.8;
+    background-color: black;
+    color: white;
+    font-size: 29;
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 6px;
+    font-family: 'Varela Round', sans-serif;
+}
+.overlay-home {
+    
+    background-color: rgba(0,0,0,0.4);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/*                                        About Page                     */
+.about-texts h5 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow:2 ;
+    color: gray;
+}
+.about-texts p, .about-texts-two .two-right p {
+    font-size: 17;
+}
+.about-texts p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.two-left, .two-right {
+    margin-top: 30px;
+  
+    
+}
+.two-left {
+    margin-right: 40px;
+}
+.two-left h6 {
+    text-align: center;
+    text-shadow:2 ;
+    color: gray;
+    margin-bottom: 30px;
+}
+.two-left img {
+    
+    opacity: 0.6;
+    transition: opacity 0.5s;
+}
+.two-left img:hover {
+    opacity: 1;
+}
+.about-texts-two {
+    display: flex;
+    flex-direction: row;
+    
+}
+/*          Bigger Screen       */
+@media screen and (min-width:768px) and (max-width: 992px) {
+    
+    .about-texts-two {
+        display: flex;
+        flex-direction: column;
+        
+    
+    }
+}
+
+/*          Tablet Screen       */
+@media screen and (min-width:401px) and (max-width: 768px) {
+    
+    .about-texts-two {
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .home-class h1 {
+        font-size: 24;
+    }
+    .about-texts p, .about-texts-two .two-right p {
+        font-size: 15;
+    }
+}
+
+/*          Mobile     Screen */
+@media screen and (max-width:400px) {
+    
+    .about-texts-two {
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .two-left img {
+        width: 80%;
+    }
+    .home-class h1 {
+        font-size: 15;
+    }
+    .about-texts p, .about-texts-two .two-right p {
+        font-size: 13;
+    }
+
+}
+
+
+
+
+
