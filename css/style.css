@@ -1,6 +1,6 @@
 /*                                      بسم الله الرحمن الرحيم* /
 
-/*   M                  Main Divs                       */
+/*                     Main Divs                       */
 * {
 
     margin: 0;
@@ -11,7 +11,7 @@
 }
 .pd-y {
     /* For padding all the div */
-/*Sir ia mehr*/
+
     padding: 90px 0px;
 }
 
@@ -80,7 +80,9 @@
     background-color: gainsboro;
     color: white;
 }
-
+.container-fluid .nav-link:focus{
+    color: red;
+}
 /*                                          Home Page                 */
 
 .home-page {
@@ -205,6 +207,18 @@
         font-size: 13;
     }
 
+}
+.card-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-flex .card {
+    margin-left: 10px;
+}
+.card-flex .card .card-body .btn-primary {
+    
 }
 
 
