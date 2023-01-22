@@ -175,13 +175,19 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     
-
- 
 }
-
-.card-flex .card .card-body .btn-card {
-    display: grid;
-    justify-content: center;
+.card-flex .card {
+    opacity: 0.7;
+    transition: opacity 0.5s;
+}
+.card-flex .card:hover {
+    opacity: 1;
+}
+   
+.card-flex .card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .card-first-text, .card-text {
     text-align: center;
@@ -191,6 +197,7 @@
     margin-bottom: 30px;
 
 }
+
 
 /*                                          Media Query ( from 992px to 400px )                  */
 
@@ -220,9 +227,10 @@
         font-size: 15;
         
     }
-    .card-flex .card {
-        width: 70%;
-        height: 200px;
+    .card-flex {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        
     }
 }
 

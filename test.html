@@ -8,36 +8,43 @@
         <title>Test 1 </title>
     
     <style>
-        
-        div img {
-            
-            width: 80%;
-            
+        .tester {
+            display: grid;
+            grid-gap: 5px;
+            grid-template-areas: 
+            "hd hd hd hd"
+            "ad nd nd nd"
+            "ad nd nd nd "
+            "ad nd nd nd "
+            "ft ft ft ft";
         }
-        
-        @media screen and (max-width: 768px) {
-            
-            div img {
-                
-                width: 40%;
-            }
+        .tester > * {
+            background-color: gray;
+            padding: 40px;
+            color: red;
+
         }
-        @media screen and (max-width: 400px) {
-            
-            div img {
-                
-                width: 20%;
-            }
+        header {
+            grid-area: hd;
+        }
+        aside {
+            grid-area: ad;
+        }
+        nav {
+            grid-area: nd;
+        }
+        footer {
+            grid-area: ft;
         }
         </style>
     </head>
         <body>
     
-            <div>
-                <img src="cake.jpeg" />
-                <br>
-                <span>Come here baby</span>
-            
+            <div class="tester">
+                <header>Omar</header>
+                <aside>Khaled</aside>
+                <nav>Kos omk</nav>
+                <footer>Omkak</footer>
             </div>
     
     
