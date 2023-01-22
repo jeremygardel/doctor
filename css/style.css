@@ -16,7 +16,7 @@
 }
 
 .container {
-
+    
     width: 80%;
     margin: auto;
 }
@@ -226,6 +226,7 @@
 .card-flex .card .card-body .btn-card {
     display: grid;
     justify-content: center;
+/*    This is war */
 }
 .card-first-text, .card-text {
     text-align: center;
