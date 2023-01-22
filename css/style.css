@@ -198,7 +198,31 @@
 
 }
 
+/*                             Blog Contents                       */
 
+.blog-content {
+    border: 1px solid gainsboro;
+    box-shadow: 4px 4px gainsboro;
+    width: 85%;
+    margin: auto;
+}
+.blog-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.blog-img img {
+    width: 100%;
+    opacity: 0.8;
+    transition: opacity 0.5s;
+}
+.blog-img img:hover {
+    opacity: 1;
+}
+.blog-desc h3 {
+    margin-top: 10px;
+    margin-left: 4px;
+}
 /*                                          Media Query ( from 992px to 400px )                  */
 
 /*          Bigger Screen       */
