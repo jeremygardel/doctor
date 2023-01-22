@@ -34,7 +34,7 @@
 }
 
 .section-header .section-line {
-    margin: 16px auto 70px auto;
+    margin: 16px auto 35px auto;
     display: block;
     height: 3px;
     width: 30px;
@@ -129,10 +129,13 @@
 }
 .about-texts p, .about-texts-two .two-right p {
     font-size: 17;
+    text-shadow:2 ;
+    color: gray;
 }
 .about-texts p {
     margin-top: 10px;
     margin-bottom: 20px;
+
 }
 
 .two-left, .two-right {
@@ -186,6 +189,7 @@
     }
     .about-texts p, .about-texts-two .two-right p {
         font-size: 15;
+        
     }
 }
 
@@ -208,18 +212,30 @@
     }
 
 }
+
+/*              Card-Flex               */ 
 .card-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.card-flex .card {
-    margin-left: 10px;
-}
-.card-flex .card .card-body .btn-primary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
     
+
+ 
 }
+
+.card-flex .card .card-body .btn-card {
+    display: grid;
+    justify-content: center;
+}
+.card-first-text, .card-text {
+    text-align: center;
+    text-shadow:2 ;
+    color: gray;
+    font-size: 16;
+    margin-bottom: 30px;
+
+}
+
 
 
 
