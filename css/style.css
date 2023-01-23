@@ -12,7 +12,7 @@
 .pd-y {
     /* For padding all the div */
 
-    padding: 90px 0px;
+    padding: 50px 0px;
 }
 
 .container {
@@ -171,24 +171,24 @@
 
 /*              Card-Flex               */ 
 .card-flex {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    width: 95%;
+    margin: auto;
+
 }
 .card-flex .card {
     opacity: 0.7;
     transition: opacity 0.5s;
+   
 }
 .card-flex .card:hover {
     opacity: 1;
 }
    
-.card-flex .card .card-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 .card-first-text, .card-text {
     text-align: center;
     text-shadow:2 ;
@@ -203,7 +203,7 @@
 .blog-content {
     border: 1px solid gainsboro;
     box-shadow: 4px 4px gainsboro;
-    width: 85%;
+    width: 80%;
     margin: auto;
 }
 .blog-btn {
@@ -216,13 +216,55 @@
     opacity: 0.8;
     transition: opacity 0.5s;
 }
-.blog-img img:hover {
+/* Hovers */
+.blog-img img:hover { 
     opacity: 1;
 }
 .blog-desc h3 {
-    margin-top: 10px;
-    margin-left: 4px;
+    text-transform: uppercase;
+    margin: 10px 0px 15px 8px;
+
 }
+.blog-desc .title-desc, .blog-desc p {
+    margin-left: 8px;
+}
+.blog-desc p {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    color:rgba(0,0,0,0.9)
+}
+.blog-desc .blog-date {
+    color: grey;
+    margin-left: 2px;
+ 
+}
+.blog-btn .btn-blog, .blog-btn p {
+
+    margin: 0 20px 0 15px; 
+
+}
+.blog-btn p {
+    margin-top: 9px;
+}
+.blog-btn .btn-blog {
+    padding: 8px;
+    background-color: white;
+    border: 2px solid #CAD1D3;
+    transition: background-color 0.5s, border 0.5s;
+    font-weight: 500;
+}
+.btn-blog:hover {
+    background-color: #C3C3C3;
+    border: 2px solid #C3C3C3;
+}
+.btn-blog:focus, .blog-content {
+    
+
+}
+.blog-btn {
+    margin-bottom: 25px;
+}
+
 /*                                          Media Query ( from 992px to 400px )                  */
 
 /*          Bigger Screen       */
@@ -234,6 +276,10 @@
         
     
     }
+    .card-flex {
+        width: 93%;
+    }
+   
 }
 
 /*          Tablet Screen       */
@@ -252,9 +298,11 @@
         
     }
     .card-flex {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr); 
-        
+        width: 90%;
+        opacity: 1;
+    }
+    .card-flex .card {
+        opacity: 1;
     }
 }
 
@@ -274,6 +322,15 @@
     }
     .about-texts p, .about-texts-two .two-right p {
         font-size: 13;
+    }
+    .card-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 40%;
+    }
+    .card-flex .card {
+        opacity: 1;
     }
 
 }
