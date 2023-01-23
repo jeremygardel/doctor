@@ -270,14 +270,17 @@
 /*                                          Media Query ( from 992px to 400px )                  */
 
 /*          Bigger Screen       */
+
+
 @media screen and (min-width:768px) and (max-width: 992px) {
-    
+    /*        About         */
     .about-texts-two {
         display: flex;
         flex-direction: column;
         
     
     }
+    /*     Card Meda Query */
     .card-flex {
         width: 93%;
     }
@@ -286,19 +289,24 @@
 
 /*          Tablet Screen       */
 @media screen and (min-width:401px) and (max-width: 768px) {
-    
+    /*        Home _ Media _ Query */
+       .home-class h1 {
+        font-size: 24;
+    }
+
+    /*        Aobut _ Media _ Query */
+
     .about-texts-two {
         display: flex;
         flex-direction: column;
     
     }
-    .home-class h1 {
-        font-size: 24;
-    }
     .about-texts p, .about-texts-two .two-right p {
         font-size: 15;
         
     }
+
+    /*        Card _ Media _ Query */
     .card-flex {
         width: 90%;
         opacity: 1;
@@ -306,7 +314,8 @@
     .card-flex .card {
         opacity: 1;
     }
-    /*                  Blog _ Media _ Query */
+
+    /*           Blog _ Media _ Query */
     .blog-desc h3 {
         font-size: 17;
     }
@@ -325,6 +334,12 @@
 /*          Mobile     Screen */
 @media screen and (max-width:400px) {
     
+    /*       Home _ Media _ Query */
+    .home-class h1 {
+            font-size: 15;
+    }
+
+    /*       About _ Media _ Query */
     .about-texts-two {
         display: flex;
         flex-direction: column;
@@ -334,12 +349,12 @@
         width: 85%;
         margin-left: 10px;
     }
-    .home-class h1 {
-        font-size: 15;
-    }
+
     .about-texts p, .about-texts-two .two-right p {
         font-size: 13;
     }
+
+    /*       Card _ Media _ Query */
     .card-flex {
         display: flex;
         flex-direction: column;
@@ -352,7 +367,7 @@
         opacity: 1;
     }
 
-    /*                  Blog _ Media _ Query */
+    /*         Blog _ Media _ Query */
         .blog-desc h3 {
             font-size: 15;
         }
