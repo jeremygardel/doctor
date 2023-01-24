@@ -224,13 +224,15 @@
     text-transform: uppercase;
     margin: 10px 0px 15px 8px;
 
+
 }
-.blog-desc .title-desc, .blog-desc p {
+.blog-desc .title-desc,
+.blog-desc p {
     margin-left: 8px;
 }
 .blog-desc p {
     margin-top: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     color:rgba(0,0,0,0.9)
 }
 .blog-desc .blog-date {
@@ -238,7 +240,9 @@
     margin-left: 2px;
  
 }
-.blog-btn .btn-blog, .blog-btn p {
+
+.blog-btn .btn-blog,
+.blog-btn p {
 
     margin: 0 20px 0 15px; 
 
@@ -257,13 +261,123 @@
     background-color: #C3C3C3;
     border: 2px solid #C3C3C3;
 }
-.btn-blog:focus, .blog-content {
-    
-
-}
 .blog-btn {
     margin-bottom: 25px;
 }
+
+
+/*                              Fashion Content                      */
+
+/*  Main Divs */
+.fashion-content {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+}
+.fashion-content-left {
+    background-color: gainsboro;
+    border: 2px solid whitesmoke;
+    box-shadow: 4px 4px darkgrey;
+    margin-right: 20px;
+    width: 65%;
+    margin: auto;
+   
+}
+.fashion-content-right {
+    background-color:black;
+    width: 30%;
+    color: white;
+    height: 10%;
+}
+
+
+/*  Left Content */
+.content-left-title {
+    text-align: center;
+    margin-top: 22px;
+}
+.content-left-title h6 {
+    margin-top: 12px;
+}
+.content-left-title h6:after {
+    content:"May 2, 2014";
+    color: darkgrey;
+}
+
+.content-left-img img {
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+
+}
+.content-left-desc {
+    
+    margin: 0 20px 0 20px;
+}
+.content-left-desc p {
+    opacity: 0.8;
+}
+.content-left-desc p:before {
+    content: "More hats! ";
+    font-weight: bold;
+}
+
+.content-left-btn {
+    margin: 18px 0 25px 0;
+    padding: 9px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.content-left-btn .fashion-btn {
+
+    padding: 5px 13px;
+    margin-left: 10px;
+    background-color: white;
+    border: 1px solid darkgrey;
+    
+}
+
+.content-left-btn .fashion-btn:hover {
+    background-color: darkgrey;
+}
+.content-left-btn .fashion-btn-reply {
+    margin-right: 10px;
+    padding: 6px 20px;
+    color: white;
+    background-color: black;
+    border: 1px solid darkgrey;
+
+}
+.content-left-btn .fashion-btn-reply:hover {
+    color: black;
+    background-color: darkgrey;
+    
+}
+.content-left-btn .fashion-btn i { margin-right: 3px; }
+
+
+/*      Right Content */
+
+.content-right-img img {
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.6;
+    transition: opacity 0.5s;
+}
+
+.content-right-desc { margin-left: 10px; }
+.content-right-desc p, .content-right-desc h5 { margin-top: 12px; }
+
+.content-right-desc h5 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fashion-content-right:hover .content-right-img img {
+    opacity:1;
+}
+
 
 
 
@@ -329,6 +443,26 @@
         font-size: 14;
     
     }
+    /*           Fashion _ Media _ Query */
+    .fashion-content {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .fashion-content-right {
+        background-color:black;
+        width: 80%;
+        color: white;
+        margin:auto;
+        
+    }
+    .fashion-content-left {
+        width: 80%;
+        margin:auto;
+        
+    }
+
 }
 
 /*          Mobile     Screen */
@@ -380,6 +514,25 @@
         .blog-btn {
             font-size: 12;
         
+        }
+            /*           Fashion _ Media _ Query */
+        .fashion-content {
+            display:flex;
+            flex-direction: column;
+            
+
+        }
+        .fashion-content-left {
+            width: 90%;
+            margin:auto;
+            
+        }
+        .fashion-content-right {
+            background-color:black;
+            color: white;
+            width: 80%;
+            margin:auto;
+            
         }
 
 }
