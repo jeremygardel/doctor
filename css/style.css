@@ -356,9 +356,38 @@
     background-color: darkgrey;
     
 }
+
 .content-left-btn .fashion-btn i { margin-right: 3px; }
 
+.content-left-reply {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.reply-span-line{
+    margin: 10px auto 30px auto;
+    display: block;
+    height: 1px;
+    width: 90%;
+    background-color: darkgray;
+   
+}
+.content-left-reply .reply-img {
+    margin: auto 20px auto 23px;
+}
+.reply-img img {
+    width: 50%;
+}
 
+.content-left-reply .reply-desc p {
+    margin: 20px auto auto 20px;
+
+}
+.reply-desc h5:after {
+    content: " May 3, 2014, 6:32 PM";
+    color: grey;
+    font-size: 12;
+}
 /*      Right Content */
 
 .content-right-img img {
