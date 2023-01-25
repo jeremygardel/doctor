@@ -203,7 +203,7 @@
 .blog-content {
     border: 1px solid gainsboro;
     box-shadow: 4px 4px gainsboro;
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 .blog-btn {
@@ -517,19 +517,15 @@ el background bta3t el div el kbera... */
     }
 
     /*           Blog _ Media _ Query */
-    .blog-desc h3 {
-        font-size: 17;
+=
+    .blog-content {
+        width: 90%;
+        margin: auto;
     }
-    .blog-desc .title-desc {
-        font-size: 15;
-    }
-    .blog-desc p {
-        font-size: 13;
-    }
-    .blog-btn {
+      .blog-btn {
         font-size: 14;
-    
-    }
+      }
+
     /*           Fashion _ Media _ Query */
     .fashion-content {
         display:flex;
@@ -541,14 +537,23 @@ el background bta3t el div el kbera... */
         background-color:black;
         width: 80%;
         color: white;
-        margin:auto;
+        margin: auto;
         
     }
     .fashion-content-left {
         width: 80%;
-        margin:auto;
+        margin-bottom: 30px;
         
     }
+    /*           Team _ Media _ Query */
+    .team-content {
+        display:grid;
+        grid-template-columns:repeat(2, 50%);
+        grid-template-rows: repeat(2, auto);
+        width: 100%;
+        margin:auto;
+      }
+      
 
 }
 
@@ -611,16 +616,26 @@ el background bta3t el div el kbera... */
         }
         .fashion-content-left {
             width: 90%;
-            margin:auto;
+            margin-bottom: 30px;
+            
             
         }
         .fashion-content-right {
             background-color:black;
             color: white;
             width: 80%;
-            margin:auto;
+            margin: auto;
+           
             
         }
+        /*           Team_ Media _ Query */
+        .team-content {
+            display:grid;
+            grid-template-columns:repeat(1, 1fr);
+            grid-template-rows: repeat(4, auto);
+            width: 100%;
+            
+          }
 
 }
 
