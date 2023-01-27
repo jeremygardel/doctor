@@ -490,7 +490,49 @@ el background bta3t el div el kbera... */
     margin-bottom: 10px;
 }
 
-/* Media Query of info not yet */
+/*                              Skills Div                           */
+
+
+.skills-content {
+    display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  width: 100%;
+  background-color: #f1f1f1; 
+  padding: 70px 15px; 
+
+}
+
+.skills-desc { margin-left:15px;}
+.skills-desc p { margin-bottom: 15px; }
+
+.skills-desc h5 {
+    margin-bottom: 25px;
+    font-family: cursive;
+}
+
+.skills-perc i { margin-right: 10px; }
+
+.special-perc {
+    letter-spacing: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.percentage {
+    background-color:#9e9e9e ;
+    width: 90%;
+    
+}
+.over-perc { 
+    background-color: #616161;
+    color: white;
+    text-align: center;
+    padding: 3px 0;
+    margin-bottom: 14px;
+}
+.photo-perc { width: 93%; }
+.web-perc {  width: 69%; }
+.shop-perc {  width: 48%; }
+
 
 /*                                          Media Query ( from 992px to 400px )                  */
 
@@ -541,7 +583,7 @@ el background bta3t el div el kbera... */
     }
 
     /*           Blog _ Media _ Query */
-=
+
     .blog-content {
         width: 90%;
         margin: auto;
@@ -577,7 +619,7 @@ el background bta3t el div el kbera... */
         width: 100%;
         margin:auto;
       }
-      /*            Information_Media Query */
+      /*            Information_ Media _ Query */
       .information {
         display:grid;
         grid-template-columns: repeat(2, 50%);
@@ -585,8 +627,16 @@ el background bta3t el div el kbera... */
         width: 100%;
         height: auto;
       }
+      /*            Skills _ Media _ Query */
+      .skills-content {
+            display:grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(2, auto);
+            width: 100%; 
+      }
+      .skills-desc {  margin-bottom: 20px; }
+      .skills-perc { margin-left: 14px; }
       
-
 }
 
 /*          Mobile     Screen */
@@ -667,15 +717,24 @@ el background bta3t el div el kbera... */
             grid-template-rows: repeat(4, auto);
             width: 100%;
             
-          }
+        }
           /*           Information Media _ Query */
-          .information {
+        .information {
             display:grid;
             grid-template-columns: repeat(2, 50%);
             grid-template-rows: repeat(2, auto);
             width: 100%;
             height: auto;
-          }
+        }
+                /*            Skills _ Media _ Query */
+        .skills-content {
+            display:grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(2, auto);
+            width: 100%; 
+        }
+          .skills-desc {  margin-bottom: 19px; }
+          .skills-perc { margin-left: 12px; }
 
 }
 
