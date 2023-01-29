@@ -5,6 +5,7 @@
         <meta charset="utf-8" name="description" content="text" name="keywords" /> <!-- For Arabic Language -->
         <link rel="stylesheet" href="CSS/font-awesome.min.css" />
         <link rel="stylesheet" href="CSS/style.css" />
+        
         <link rel="stylesheet" href="CSS/bootstrap.css" />
         <link rel="icon" type="image/x-icon" href="ico.png">
         
@@ -205,11 +206,11 @@
                   </div>   <!--          Fashion Desc left             -->
 
                   <div class= "content-left-btn">
-                        <button class="fashion-btn">
+                        <button class="fashion-btn" id = "clickme">
                           <b><i class="fa fa-thumbs-up"></i>Like</b>
                         </button>
-                        <button class="fashion-btn-reply">
-                          <b> Replies </b>
+                        <button class="fashion-btn-reply" id="btnp">
+                          <b > Replies </b>
                         </button>
                   </div>   <!--            Fashion Button Left            -->
 
@@ -218,7 +219,7 @@
                     <span class="reply-span-line"></span>
                   </div> <!--          Span           --> 
 
-                  <div class="content-left-reply">
+                  <div class="content-left-reply" style="display: none;" id="divs">
 
                       <div class="reply-img">
                           <img src="images/george.jpg"/>
@@ -397,6 +398,9 @@
 
 
           </div> <!--    info-content   -->
+
+
+          <script src="js/script.js"></script>
         </body> 
     
 
