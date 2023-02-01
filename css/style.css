@@ -536,6 +536,14 @@ el background bta3t el div el kbera... */
 .shop-perc {  width: 48%; }
 
 
+/*                                      Contact Information                          */
+
+.contactinfo { background-color: white;}
+
+.contact-desc { text-align: center; }
+.contact-desc h4 { margin-bottom: 25px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+.contact-desc p { font-size: 19; margin-bottom: 27px; }
+
 /*                                          Media Query ( from 992px to 400px )                  */
 
 /*          Bigger Screen       */
