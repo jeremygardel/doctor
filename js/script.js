@@ -5,6 +5,8 @@ var clicklike = document.getElementById("clickme");
 var divy = document.getElementById("divs");
 var checkicon = document.getElementById("checki");
 var thumbsicon = document.getElementById("thumbsi");
+var contactbtnjs = document.getElementById("contactbtn");
+
 
 /*  Here when we define the function 'onclickreply' and ask if its none or flex...' */
 function onclickreply() {
@@ -33,8 +35,12 @@ function onclicklike () {
     
   
   }
-};
-
+}
 clicklike.onclick = onclicklike;
 
-
+// Function On click on button contact
+function onclickcontact () {
+  contactbtnjs.innerText = '+201069797760';
+}
+  
+contactbtnjs.onclick = onclickcontact;
