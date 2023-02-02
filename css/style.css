@@ -524,13 +524,18 @@ el background bta3t el div el kbera... */
     width: 90%;
     
 }
+.skills-perc:hover .over-perc {
+    background-color: black;
+}
 .over-perc { 
     background-color: #616161;
     color: white;
     text-align: center;
     padding: 3px 0;
     margin-bottom: 14px;
+    transition: background-color 0.3s;
 }
+
 .photo-perc { width: 93%; }
 .web-perc {  width: 69%; }
 .shop-perc {  width: 48%; }
@@ -538,11 +543,91 @@ el background bta3t el div el kbera... */
 
 /*                                      Contact Information                          */
 
-.contactinfo { background-color: white;}
+.contactinfo { 
+    background-color: white; 
+    width: 100%;
+    padding: 70px 15px; 
+}
 
 .contact-desc { text-align: center; }
 .contact-desc h4 { margin-bottom: 25px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
 .contact-desc p { font-size: 19; margin-bottom: 27px; }
+
+
+.contact-loc-main, .contact-form, .contact-img { margin-left: 10px;}
+
+.contact-loc { margin-bottom: 20px;}
+.contact-loc i { font-size: 35; margin-right: 5px; }
+.contact-loc span { margin-left: 23px;}
+
+.contact-input {
+    border: 1px solid #ccc;
+    width: 90%;
+    padding: 9px;
+    transition: border 0.3s;
+}
+.contact-input:hover { border: 1px solid gray; }
+.contact-input:focus { border: 1px solid gray; }
+
+.contact-form { margin-top: 40px; }
+.contact-form form 
+{ 
+    display: block;
+}
+
+.contact-form-btn {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+    
+}
+.contact-form-btn:hover {
+    background-color: darkgrey;
+    color: black;
+}
+.contact-img {     
+    margin-top: 48px;
+    width: 100%;
+    vertical-align: middle;
+    filter: grayscale(65%); /*   3shan n5ma2 el image (tb2a grey kda )    */
+}
+
+
+/*                                      Footer                                   */
+footer { 
+    background-color: black;
+    color: #fff;
+    padding-bottom: 55px;
+    padding-top: 55px;
+    text-align: center;
+}
+.social-btn {
+    border: none;
+    display: inline-block;
+    padding: 8px 20px;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.social i {
+    font-size: 26;
+    margin: 18px 0 20px 5px;
+    
+}
+.social i:hover {
+    color:#9e9e9e;
+}
+footer a {
+    overflow: hidden;
+    color: white;
+}
 
 /*                                          Media Query ( from 992px to 400px )                  */
 

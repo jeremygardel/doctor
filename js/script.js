@@ -41,6 +41,6 @@ clicklike.onclick = onclicklike;
 // Function On click on button contact
 function onclickcontact () {
   contactbtnjs.innerText = '+201069797760';
+
 }
-  
 contactbtnjs.onclick = onclickcontact;
