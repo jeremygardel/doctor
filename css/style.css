@@ -41,6 +41,11 @@
     background-color: crimson;
 
 }
+.container-fluid { 
+    position:fixed;
+    margin-top: 27px;
+}
+.navbar { margin-bottom: 28px;}
 
 
 
@@ -52,13 +57,20 @@
 }
 
 .container-fluid .navbar-brand {
-    
+    color: gainsboro;
+    transition: color 0.3s;
     margin-left: 30px;
     margin-bottom: 5px;
+}
+.container-fluid .navbar-brand:hover {
+    color: white;
 }
 .container-fluid .d-flex .form-control {
     
     width: 280px;
+}
+.container-fluid .form-control:hover {
+    border: 2px solid gray;
 }
 .container-fluid .d-flex .btn-outline-success {
     margin-left: 20px;
@@ -68,7 +80,7 @@
 
 .container-fluid .d-flex .btn-outline-success:hover {
 
-    background-color: red;
+    background-color: grey;
 }
 
 .container-fluid {
@@ -88,12 +100,13 @@
 .home-page {
     background-image: url(cake.jpeg);
     background-size: cover;
-    height: 70vh;
+    background-attachment: scroll;
+    height: 95vh;
 
 }
 .home-class {
     
-    height: 70vh;
+    height: 95vh;
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -154,7 +167,7 @@
 }
 .two-left img {
     
-    opacity: 0.6;
+    opacity: 0.8;
     transition: opacity 0.5s;
 }
 .two-left img:hover {
@@ -175,13 +188,19 @@
     flex-direction: row;
     justify-content: space-between;
     justify-items: center;
-    width: 95%;
+    width: 94%;
     margin: auto;
+    padding: 10px;
+
 
 }
+.card img { 
+    height: 100%;
+}
 .card-flex .card {
-    opacity: 0.7;
+    opacity: 0.8;
     transition: opacity 0.5s;
+    
    
 }
 .card-flex .card:hover {
@@ -213,8 +232,8 @@
 }
 .blog-img img {
     width: 100%;
-    opacity: 0.8;
-    transition: opacity 0.5s;
+    opacity: 0.9;
+    transition: opacity 0.3s;
 }
 /* Hovers */
 .blog-img img:hover { 
@@ -615,15 +634,19 @@ footer {
     text-align: center;
     overflow: hidden;
     margin-bottom: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.social-btn:hover {
+    background-color: #616161;
+    color: white;
 }
 .social i {
     font-size: 26;
     margin: 18px 0 20px 5px;
     
 }
-.social i:hover {
-    color:#9e9e9e;
-}
+.social i:hover { color:#9e9e9e; }
+
 footer a {
     overflow: hidden;
     color: white;
