@@ -8,6 +8,8 @@ var thumbsicon = document.getElementById("thumbsi");
 var contactbtnjs = document.getElementById("contactbtn");
 
 
+
+
 /*  Here when we define the function 'onclickreply' and ask if its none or flex...' */
 function onclickreply() {
 if (divy.style.display === "none") {
@@ -31,7 +33,7 @@ function onclicklike () {
   } else {
     checkicon.style.display = "none"; // We Set the Display of the Check mark as hidden
     clicklike.innerHTML = '<i class="fa fa-thumbs-up" aria-hidden="true"></i>Like';  // We create the Like mark again with letter Like
-    console.log(onclicklike); 
+   
     
   
   }

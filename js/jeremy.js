@@ -39,7 +39,8 @@ function additem () {
     
     if(productinput.value == "" ) {
         alert("you should enter");  // el if de 3shan law el input fady y3ml alert
-    } else { // else hna ely hy7sl low ktbna 7aga fe el input
+    } else 
+    { // else hna ely hy7sl low ktbna 7aga fe el input
         var lastid = data.length?data[data.length - 1].id: 1;  // t3reeef el lastid lel data length   ...ex: 0,1,2,3...
         // el data.length? we el : 1; m3naha if el data length kan fady deflo 1
 
@@ -51,7 +52,6 @@ function additem () {
 
 
         productinput.value = "";  // btfdy el input b3d el ktaba
-        console.log(data); 
-
+ 
     }
 };
