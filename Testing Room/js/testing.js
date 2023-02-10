@@ -22,7 +22,7 @@ function newQuote() {
 }
 window.onload = function() {
   divDisplay.innerHTML = "";
-  //newQuote();
+  //newQuote(); ms7t de 3shan yzhar fe el awl el inner html fady
   btnDisplay.addEventListener('click', newQuote);
 }
 
