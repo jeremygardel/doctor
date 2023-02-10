@@ -22,7 +22,7 @@ function newQuote() {
 }
 window.onload = function() {
   divDisplay.innerHTML = "";
-  newQuote();
+  //newQuote();
   btnDisplay.addEventListener('click', newQuote);
 }
 
