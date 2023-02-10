@@ -1,6 +1,32 @@
 
 
 // Java Script Testing
+
+// Quotes Testing 
+let divDisplay = document.getElementById("divDisplay");
+let btnDisplay = document.getElementById("btnDisplay");
+const quotes = [
+  'Spread love everywhere you go. Let no one ever come to you without leaving happier. -Mother Teresa',
+  'When you reach the end of your rope, tie a knot in it and hang on. -Franklin D. Roosevelt',
+  'Always remember that you are absolutely unique. Just like everyone else. -Margaret Mead',
+  'Don\'t judge each day by the harvest you reap but by the seeds that you plant. -Robert Louis Stevenson',
+  'The best and most beautiful things in the world cannot be seen or even touched — they must be felt with the heart. -Helen Keller',
+  'Whoever is happy will make others happy too. -Anne Frank',
+  'Do not go where the path may lead, go instead where there is no path and leave a trail. -Ralph Waldo Emerson'
+
+];
+
+function newQuote() {
+  let randomQ = Math.floor(Math.random() * (quotes.length));
+  divDisplay.innerHTML = quotes[randomQ];
+}
+window.onload = function() {
+  divDisplay.innerHTML = "";
+  newQuote();
+  btnDisplay.addEventListener('click', newQuote);
+}
+
+
 // Dynamic 
 
 
@@ -17,7 +43,7 @@ let div = `
     </div>
 
 `;
-document.write(div.repeat(2)); // Repeat
+console.log(div.repeat(1)); // Repeat
 
 
 // If condition 
@@ -53,7 +79,7 @@ else {
   console.log("a7a");
 }
 
-document.write(numberBe.charAt(14).toUpperCase().repeat(7)); // 8H
+console.log(numberBe.charAt(14).toUpperCase().repeat(7)); // 8H
 
 console.log(numberBe.slice(0 ,1).toUpperCase() + numberBe.slice(1,7));  //  Mahmoud
 

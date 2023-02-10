@@ -1,14 +1,61 @@
 <html>
 <head>
 <style>
+    body {
+        background: url(back.jpg);
+        background-size: cover;
+        color:white;
+    }
     h1 {
         text-align: center;
         margin-top: 30px;
     }
+    .quote {
+        
+        text-align: center;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        border: 2px solid lightgray;
+        padding: 30px 140px;
+        box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+        opacity: 0.7;
+        transition: opacity 0.3s, border 0.3s;
+        
+    }
+    .quote:hover { opacity: 1; border: 2px solid lightblue;}
+    .quote h4 {
+        margin-bottom: 30px;
+    }
+    .quote button { 
+        margin: 40px 0 15px 0;
+        border: none;
+        padding: 9px 22px;
+        vertical-align: middle;
+        background-color: lightseagreen;
+        font-weight: 600;
+        transition: background-color 0.3s;
+    }
+    .quote button:hover {
+        background-color: lightblue;
+    }
+    .quote:hover {
+
+    }
+    
 </style>
 </head>
 <body>
     <h1>Testing Room</h1>
+    
+    <div class="quote">
+        <h4>Click on the button to generate</h4>
+        <div id="divDisplay"></div>
+        <button id="btnDisplay">Generate</button>
+    </div>
     <script src="js/testing.js"></script>
 </body>
 </html>
