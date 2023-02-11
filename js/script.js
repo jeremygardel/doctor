@@ -7,8 +7,9 @@ var checkicon = document.getElementById("checki");
 var thumbsicon = document.getElementById("thumbsi");
 var contactbtnjs = document.getElementById("contactbtn");
 
-
-
+let loginpage = document.getElementById("popup");
+let loginbtn = document.getElementById("login-btn");
+let popexit = document.getElementById("pop-exit");
 
 /*  Here when we define the function 'onclickreply' and ask if its none or flex...' */
 function onclickreply() {
@@ -46,3 +47,15 @@ function onclickcontact () {
 
 }
 contactbtnjs.onclick = onclickcontact;
+
+
+// Pop Up Function & Close it
+function onclicklogin () {
+  loginpage.style.display = "block";
+
+}
+function onclickpopexit () {
+  loginpage.style.display = "none";
+}
+loginbtn.onclick = onclicklogin;
+popexit.onclick = onclickpopexit;

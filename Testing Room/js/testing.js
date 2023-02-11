@@ -19,6 +19,7 @@ const quotes = [
 function newQuote() {
   let randomQ = Math.floor(Math.random() * (quotes.length));
   divDisplay.innerHTML = quotes[randomQ];
+  
 }
 window.onload = function() {
   divDisplay.innerHTML = "";
@@ -27,9 +28,9 @@ window.onload = function() {
 }
 
 
+
+
 // Dynamic 
-
-
 let title = " Zero" , desc = " El zero web school" , date = 2022;
 
 let a = 2;
@@ -43,7 +44,7 @@ let div = `
     </div>
 
 `;
-console.log(div.repeat(1)); // Repeat
+//console.log(div.repeat(1)); // Repeat
 
 
 // If condition 

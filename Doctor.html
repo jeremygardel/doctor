@@ -33,7 +33,7 @@
                         Blogs
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="Testing Room/testing-room.html" target="_blank">Quotes</a></li>
                         <li><a class="dropdown-item" href="#">FBI</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">CIA</a></li>
@@ -442,8 +442,8 @@
                 <p><input class="contact-input" type="text" placeholder="Subject" required="" name="Subject"></p>
                 <p><input class="contact-input" type="text" placeholder="Message" required="" name="Message"></p>
               </form>
-              <button class="contact-form-btn" type="submit">
-                <i class="fa fa-paper-plane"></i> SEND MESSAGE
+              <button class="contact-form-btn" type="submit" id="login-btn">
+                <i class="fa fa-paper-plane" ></i> SEND MESSAGE
               </button>
             </div> <!--          Contact Form            -->
             <div class="contact-img">
@@ -468,6 +468,23 @@
             </p>
 
           </footer> 
+
+
+          <!-- Login Page     -->
+          
+            <div id="popup" class="login-page" style="display: none;">
+              <a  class="popexit"><i class="fa fa-times" id="pop-exit"></i></a>
+              <h5>Please Sign in</h5>
+              <form>
+                <input type="email" id="fname" name="fname" placeholder="Username or Email Addreas">
+                <input type="password" id="lname" name="lname" placeholder="Password">
+              </form>
+              <button class="btn-login">Submit</button>
+              <p>© 2017–2022</p>
+              <a href="Testing Room/testing-room.html" target="_blank" >Quotes</a>
+            </div>
+        
+
           <script src="js/script.js"></script>
           <script src="js/bootstrap.js"></script>
         </body> 
