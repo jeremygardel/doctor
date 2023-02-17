@@ -2,6 +2,7 @@
 
 // Java Script Testing
 
+
 // Quotes Testing 
 let divDisplay = document.getElementById("divDisplay");
 let btnDisplay = document.getElementById("btnDisplay");
@@ -28,6 +29,38 @@ window.onload = function() {
 }
 
 
+
+//Switch case to if case'=
+
+// let jobs = ['Manager', 'Information Tech', 'Support', 'Developer', 'Designer']
+let job = "Designers";
+let salary = 0;
+switch (job) {
+  case "Manager":
+    salary = 8000;
+    console.log("I am a manager" + " " + salary);
+    
+    break;
+  case "Designer": 
+    salary = 6000;
+    console.log("I am a designer" + " " + salary);
+  default: 
+    console.log ("none of above" + " " + salary);
+
+}
+// If to switch
+/*if(job === "Designer") {
+  salary = 4000;
+  console.log ( "I am a desinger" + " " + salary);
+}
+else if +(job === "Manager" || job === "driver") {
+  salary === 7000;
+  console.log ( " IAm a manager/driver" + " " + salary);
+
+}
+else {
+console.log (" bye");
+} */
 
 
 // Dynamic 
@@ -61,18 +94,21 @@ r < 10 ? console.log(10)  :
 
 // Concentation & String Methods
 let numberBe = "mahmoud web schools";
-if(numberBe.length + numberBe.length === 37 )
+if(numberBe.length + numberBe.length === 38 )
 {
-  console.log(numberBe.length + "Found");
+  
+  console.log(numberBe.length * numberBe.length + " " + "Found");
 }
 else { console.log("UNDEFINED");
 }
 
-if(numberBe.charAt(numberBe.search("w")) === "w") {
-	console.log("Good Searched for W");
+if(numberBe.charAt(numberBe.search("j")) === "j") {
+	console.log("Good Searched for the letter");
+}
+else { console.log("Not found the letter");
 }
 
-if(typeof numberBe === "String")
+if(typeof numberBe === 'object')
 {
   console.log("Yes sir ");
 }
@@ -90,5 +126,40 @@ console.log(numberBe.substr(0, 7) + " " + numberBe.substr(12, 7) );   // Mahmoud
 
 console.log(numberBe.slice(0, 1).toLowerCase() + numberBe.slice(1,18).toUpperCase()
  + numberBe.slice(-1).toLowerCase());   // mAHMOUD WEB SCHOOLs 
+
+
+
+
+ // Array Selecting & joining
+
+
+// Slice  >   NOT INCLUDING END!
+
+let zero = 0;
+let counter = 3;
+let my = ["Ahmed", "Mazero", "Elham", "Osama", "Gamal", "Ameer" ];
+let my2 = ["Sara", "mtwly"];
+
+// Starting from Ahmed and ending at Ahmed [ not including end ]
+
+//console.log(my.slice(zero, ++counter).reverse());  // NOT INCLUDING END!  //['Osama ', 'Elham ', 'Mazero', 'Ahmed']
+
+// ["Elham" ,"Mazero"]
+//console.log(my.slice(++zero,--counter).reverse()); // ["Elham" ,"Mazero"]
+
+
+
+//     Elham(2) counter=2              El        Mazero(1)    zero         
+//console.log(my[--counter].slice(zero, counter)+my[++zero].slice(counter)); // "Elzero"
+
+
+
+//console.log(my[zero].slice(zero,--counter)+my[++zero].slice(counter));// "Ahzero"
+
+//                Mazero > r            Mazero > O 
+console.log(my[++zero][++counter]+my[zero][++counter].toUpperCase()); // rO
+
+console.log(my.concat(my2)); // joining my with my2 > concat function
+
 
 
