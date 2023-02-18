@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/font-awesome.min.css" />
+        <title>To Do List</title>
+        <style>
+            body {
+                background: url(images/back.jpg);
+                background-size: cover;
+                color:white;
+            }
+            h1 {
+                text-align: center;
+                margin-top: 30px;
+            }
+            .quote {
+                
+                text-align: center;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                border: 2px solid lightgray;
+                padding: 30px 140px;
+                box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+                background-color: rgb(0, 0,0, 0.3);
+                
+                
+            }
+            
+            .quote h4 { margin-bottom: 30px;  }
+            .quote input { 
+                padding: 6px 70px; 
+                margin-bottom: 20px;
+                border: 2px solid lightgrey;
+                transition: border 0.3s; 
+            }
+            .quote input:hover { border: 2px solid gray;}
+            .quote button { 
+                margin: 40px 0 15px 0;
+                border: none;
+                padding: 9px 22px;
+                vertical-align: middle;
+                background-color: lightseagreen;
+                font-weight: 600;
+                transition: background-color 0.3s;
+            }
+            .quote button:hover { background-color: lightblue; }
+            .quote div {
+                 font-size: 18;
+                 padding: 1px 0;
+            }
+            .task{
+                border: 1px solid #939697;
+                border-radius: 5px;
+                background-color: #c5e1e6; 
+                margin-top: 10px;
+                color: black;
+                padding: 2px 0;
+
+
+            }
+
+            
+            
+        </style>
+    </head>
+    <body>
+        <!--  lsa 3awz a3ml lma el kalam ytktb kteer ynzl lt7t  -->
+        
+        <h1>Adding Items</h1>
+        
+        <div class="quote">
+            <h4>Type your info' & Press Add</h4>
+            <input type="text" id="product_input" placeholder="Type your text here"/>
+            <div id="product_div"></div>
+            <button id="product_btn">Add item</button>
+        </div>
+        <script src="js/todolist.js"></script>
+    </body>
+</html>

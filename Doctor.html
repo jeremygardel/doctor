@@ -8,6 +8,8 @@
         
         <link rel="stylesheet" href="CSS/bootstrap.css" />
         <link rel="icon" type="image/x-icon" href="ico.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
         
         
       
@@ -33,8 +35,8 @@
                         Blogs
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">FBI</a></li>
+                        <li><a class="dropdown-item" href="Testing Room/testing-room.html" target="_blank">Quotes</a></li>
+                        <li><a class="dropdown-item" href="todolist.html">To Do List</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">CIA</a></li>
                       </ul> 
@@ -56,7 +58,7 @@
                     <div class="home-class">
 
                         <h1>portofolo page</h1>
-
+                        <button class="home-btn">SUBSCRIBE</button>
                     </div> <!-- HCLASS DIV -->
                 </div> <!-- Overlay Div -->
             </div> <!-- Home Div -->
@@ -180,7 +182,8 @@
                 </div>  <!--           Blog Desc            -->
                 <div class="blog-btn">
                   <button class="btn-blog">READ MORE >></button>
-                  <p>Comments 2</p>
+                  <p>Comments 2 </p>
+                  
                   
                 </div>  <!--           Blog Btn            -->
               </div> <!--           blog Content          -->
@@ -242,23 +245,39 @@
                       </div>   <!--            Reply Desc           -->
                   </div> <!--            content-left-reply           -->
                 </div> <!--            Left Content             -->
+                
+                  <div class="fashion-content-right">
+                      <div class="content-right-img">
+                        <img src="images/avatar.jpg" />
+                      </div>   <!--           Fashion Img Right         -->
+                      <div class="content-right-desc">
+                          <h5>Jeremy Gardel</h5>
+                          <p>
+                            Just me, myself and I, exploring the universe of uknownment.
+                            I have a heart of love and a interest of lorem ipsum and mauris neque quam blog.
+                              I want to share my world with you.
+                          </p>
+                      </div>
+                      <div class="fashion-content-right2">
+                        <div class="content-right2-img">
+                          <img src="images/avatar2.jpg" />
+                        </div>   <!--           Fashion2 Img Right         -->
+                        <div class="content-right2-desc">
+                            <h5>Piak Lover</h5>
+                            <p>
+                              Some text about this blog entry. Fashion fashion and mauris neque quam, 
+                              fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat.
+                            </p>
+                        </div>
+                        
+                      </div> <!--            Right Content second          -->
+                      
+                  </div> <!--            Right Content          -->
+              </div> <!--            Fashion Content           -->
+            </div> <!--            Fashion  pd-y             -->
 
-                <div class="fashion-content-right">
-                    <div class="content-right-img">
-                      <img src="images/avatar.jpg" />
-                    </div>   <!--           Fashion Img Right         -->
-                    <div class="content-right-desc">
-                        <h5>Jeremy Gardel</h5>
-                        <p>
-                          Just me, myself and I, exploring the universe of uknownment.
-                           I have a heart of love and a interest of lorem ipsum and mauris neque quam blog.
-                            I want to share my world with you.
-                        </p>
-                    </div>
-                    
-                </div> <!--            Right Content          -->
-            </div> <!--            Fashion Content           -->
-          </div> <!--            Fashion  pd-y             -->
+
+
           <div class="team pd-y">
 
             <div class="section-header">
@@ -442,8 +461,8 @@
                 <p><input class="contact-input" type="text" placeholder="Subject" required="" name="Subject"></p>
                 <p><input class="contact-input" type="text" placeholder="Message" required="" name="Message"></p>
               </form>
-              <button class="contact-form-btn" type="submit">
-                <i class="fa fa-paper-plane"></i> SEND MESSAGE
+              <button class="contact-form-btn" type="submit" id="login-btn">
+                <i class="fa fa-paper-plane" ></i> SEND MESSAGE
               </button>
             </div> <!--          Contact Form            -->
             <div class="contact-img">
@@ -464,12 +483,30 @@
             </div> <!--       Social        -->
 
             <p> Powered by
-              <a href="jeremy-bio.html" title="W3.CSS" target="_blank">Jeremy</a>
+              <a href="todolist.html" title="To do List" target="_blank">Jeremy</a>
             </p>
 
           </footer> 
+
+
+          <!-- Login Page     -->
+          
+            <div id="popup" class="login-page" style="display: none;">
+              <a  class="popexit"><i class="fa fa-times" id="pop-exit"></i></a>
+              <h5>Please Sign in</h5>
+              <form>
+                <input type="email" id="fname" name="fname" placeholder="Username or Email Addreas">
+                <input type="password" id="lname" name="lname" placeholder="Password">
+              </form>
+              <button class="btn-login">Submit</button>
+              <p>© 2017–2022</p>
+              <a href="Testing Room/testing-room.html" target="_blank" >Quotes</a>
+            </div>
+        
+
           <script src="js/script.js"></script>
           <script src="js/bootstrap.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         </body> 
     
 
