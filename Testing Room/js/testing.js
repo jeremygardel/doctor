@@ -29,8 +29,7 @@ r < 10 ? console.log(10)  :
 
  
 
-
-// Concentation & String Methods
+//as// Concentation & String Methods
 let numberBe = "mahmoud web schools";
 if(numberBe.length + numberBe.length === 37 )
 {
