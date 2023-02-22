@@ -132,12 +132,23 @@ console.log(numberBe.slice(0, 1).toLowerCase() + numberBe.slice(1,18).toUpperCas
  // Array Selecting & joining
 
 
-// Slice  >   NOT INCLUDING END!
 
+// Without slice
+
+let omar = ["Ahmed", "Eman", "Osama", "Gamal"];
+omar.shift();
+omar.pop();
+console.log(omar);
+
+// Slice  >   NOT INCLUDING END!
 let zero = 0;
 let counter = 3;
 let my = ["Ahmed", "Mazero", "Elham", "Osama", "Gamal", "Ameer" ];
 let my2 = ["Sara", "mtwly"];
+
+
+
+
 
 // Starting from Ahmed and ending at Ahmed [ not including end ]
 
@@ -155,10 +166,101 @@ let my2 = ["Sara", "mtwly"];
 
 //console.log(my[zero].slice(zero,--counter)+my[++zero].slice(counter));// "Ahzero"
 
+
 //                Mazero > r            Mazero > O 
-console.log(my[++zero][++counter]+my[zero][++counter].toUpperCase()); // rO
-
-console.log(my.concat(my2)); // joining my with my2 > concat function
+//console.log(my[++zero][++counter]+my[zero][++counter].toUpperCase()); // rO
 
 
+//console.log(my.concat(my2)); // joining my with my2 > concat function
 
+
+
+//          Looping (For)
+
+let Friends = [1,2, "Nour", "Yomna", "Mahmoud", "Ali", "Niera", "Othman"];
+
+let Names = [];
+// Trying to push arrays in name array with 'for'
+for(j = 0; j < Friends.length; j++) {
+  if(typeof Friends[j] === "string") {
+    Names.push(Friends[j]);
+  }
+  console.log(Names);
+  
+}
+// trying continue function & break function
+for (i = 0; i < Friends.length; i++) {
+  
+  if(Friends[i] === "Mahmoud") {
+    continue;
+  }
+  console.log(Friends[i]);
+}
+
+// Loop Testing
+let teachers = ["Ahmed", "Ali", "Carl", "Crock", "Opera", "Opf" ];
+let students = ["Ahre", "Ckea", "Cea", "Arioa", "Cera"];
+
+let count = 5;
+
+for(let i = 0; i < count; i++) {
+  document.write(`<p> The Admin of the name is [${i+1}]  ${teachers[i]} </p>`);
+  document.write(`<h2> Team Members </h2> `);
+  if(teachers[i][0] === "A") {
+    let t = 0;
+    for(let j = 0; j < students.length; j++)
+    {
+      if(students[j][0] === "A")
+      {
+        t += 1;
+        document.write(`<p> [${t}] ${students[j]}</p>`);
+      }
+      
+    }
+
+  }
+  else if(teachers[i][0] === "C") {
+    let k = 0;
+    for(let j = 0; j < students.length; j++) {
+      if(students[j][0] === "C") {
+        k += 1;
+        document.write(`<p> [${k}] ${students[j]}</p>`);
+      }
+    }
+  }
+  document.write(`<p> ----------------- ---------------------- </p> `); 
+}
+
+
+// Another Loop Test
+
+let friendsy = ["Ahmed", "Sayed", "Ali", 1, 2, "Mahmoud", "Amany"];
+let index = 0;
+let counters = 0;
+
+for(let i = index; i < friendsy.length; i++) {
+  if(friendsy[i][index] === "A" || typeof friendsy[i] === "number") {
+    continue;
+  }
+  console.log(friendsy[i]);
+}
+
+
+
+// Function Basics
+function jeremy(jermo, rashd) {
+  console.log( `Hello ${jermo}, is ${rashd}`);
+}
+jeremy("jermo", 4);
+/*
+function generateyear(start,end, stop) {
+  for(let i = start; i < end; i++) {
+    
+    if(i === stop) {
+      continue;
+    }
+    console.log(i);
+  }
+}
+generateyear(1990,2024,2022);
+*/
