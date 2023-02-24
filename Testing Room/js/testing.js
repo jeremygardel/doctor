@@ -204,8 +204,8 @@ let students = ["Ahre", "Ckea", "Cea", "Arioa", "Cera"];
 let count = 5;
 
 for(let i = 0; i < count; i++) {
-  document.write(`<p> The Admin of the name is [${i+1}]  ${teachers[i]} </p>`);
-  document.write(`<h2> Team Members </h2> `);
+  document.write(`<p> The Teacher of the name is [${i+1}]  ${teachers[i]} </p>`);
+  document.write(`<h2> Team Students </h2> `);
   if(teachers[i][0] === "A") {
     let t = 0;
     for(let j = 0; j < students.length; j++)
@@ -264,3 +264,29 @@ function generateyear(start,end, stop) {
 }
 generateyear(1990,2024,2022);
 */
+
+//Random Function Arguments
+function showDate(...useful) {
+  let a = 0;
+  let b = 0;
+  let c = 0;
+  for(let i = 0; i < useful.length; i++) {
+    typeof useful[i] === 'string' ? a = useful[i] 
+    : typeof useful[i] === 'number' ? b = useful[i] 
+    : typeof useful[i] === 'boolean' ? c = useful[i] : console.log("Not FOund");  
+
+  }
+
+  console.log(`Hello ${a}, Your Age is ${b}`);
+  if(c === true) {
+    console.log(`You are Allowed`);
+  }
+  else 
+  { 
+    console.log(`You are not Allowed`);
+  }
+  
+}
+showDate(50, "Omar", true);
+showDate("Omar", 50, true);
+showDate(false, 50, "Omar");
