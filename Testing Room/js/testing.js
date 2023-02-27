@@ -273,7 +273,7 @@ function showDate(...useful) {
   for(let i = 0; i < useful.length; i++) {
     typeof useful[i] === 'string' ? a = useful[i] 
     : typeof useful[i] === 'number' ? b = useful[i] 
-    : typeof useful[i] === 'boolean' ? c = useful[i] : console.log("Not FOund");  
+    : typeof useful[i] === 'boolean' ? c = useful[i] : console.log("Not Found");  
 
   }
 
@@ -290,3 +290,148 @@ function showDate(...useful) {
 showDate(50, "Omar", true);
 showDate("Omar", 50, true);
 showDate(false, 50, "Omar");
+
+//Higer order function split & filter
+
+let myNums = [1,2,3,4,5,6];
+let dudes = ["Khaled", "Omar", "Niera", "Sara", "Ahmed", "Agmar"];
+let resultNums = myNums.map(function(ele) {
+    return ele + ele;
+
+});
+console.log(resultNums);
+
+let myNames = "ElZeRo";
+
+let resultNames = myNames.split("").map(function(ele) {
+  return ele === ele.toUpperCase() ? ele.toLowerCase() : ele.toUpperCase();
+  
+}).join("");
+
+console.log(resultNames);
+
+let dudesResult = dudes.filter(function(ele) {
+  return ele.startsWith("A");
+});
+console.log(dudesResult);
+
+//ParseInt & IsNan (Function still)
+
+let ignoreNumbers = "Omar5434";
+
+let letters = ignoreNumbers.split("").map(function(ele) {
+  return isNaN(parseInt(ele)) ? ele : "";
+}).join("");
+
+console.log(letters);
+
+//Filtering Mix
+
+let mix = "A13BS2ZX";
+
+let mixResult = mix.split("").filter(function(ele){
+
+  return !isNaN(parseInt(ele));
+}).map(function(ele) {
+  return ele * ele;
+}).join("");
+
+console.log(mixResult);
+
+//Function Challenge
+// let arrowCh = function(...mynames) {
+//   return `String [${mynames.join(`], [`)}] => Done! `;
+  
+// }
+// console.log(arrowCh("Omar","niera","Mostafa"));
+
+
+//Arrow Function
+//Challenge 1 
+
+let arrowCh = (...mynames) => `String [${mynames.join(`], [`)}] => Done !`;
+
+console.log(arrowCh("Boda", "Mohamed", "Mansor", "Bogy"));
+
+
+ // Num 2 bardo 
+
+// let urlCreate= (protocol, web, tld) => `${protocol}://www.${web}.${tld}`;
+
+
+// console.log(urlCreate("https", "elzero", "org")); // https://www.elzero.org
+
+
+
+// Challenge 2 
+let numbersCh = [20, 50, 10, 60];
+
+let calch = (one, two, ...num) => `${one + two + +num }`;
+
+console.log(calch(10, 20, 50));
+
+//Assignment 1
+
+function getDetails(zName, zAge, zCountry) {
+  function namePattern() {
+    let zNameResult = zName.split(" ");
+    return `Hello & Welcome ${zNameResult[0]} ${zNameResult[1][0].toUpperCase()}.,`;
+  }
+  function ageWithMessage() {
+    return `Your Age is ${parseInt(zAge)}`;
+  }
+  function countryTwoLetters() {
+    let zCounResult = zCountry.toUpperCase();
+    return `Your country is ${zCounResult[0]}${zCounResult[1]}.`;
+
+  }
+  function fullDetails() {
+    return`${namePattern()} ${ageWithMessage()} ${countryTwoLetters()}`
+  }
+  return fullDetails(); // Do Not Edit This
+}
+
+console.log(getDetails("Mahmoud Amin","34 Is The Age", "Egypt"));
+
+
+console.log(getDetails("Mohamed Khaled", "32 Is The Age", "Syria"));
+
+// Assignment 2
+
+let resultAr = [];
+function specialMix(...data) {
+  let result = 0;
+  for(let i = 0; i < data.length; i++) {
+    if(isNaN(parseInt(data[i]))) {
+      resultAr.push(data[i]);
+      continue;
+      
+    }
+    else {
+      result += parseInt(data[i]);
+    }
+  }
+  if( result === 0 ) {
+    result = `All is Strings`;
+  }
+  return result;
+}
+  console.log(resultAr); // Strings
+  console.log(specialMix(10, 20, 30));
+  console.log(specialMix("10Test", "Testing", "20Cool"));
+  console.log(specialMix("Testing", "10Testing", "40Cool")); 
+  console.log(specialMix("Test", "Cool", "Test"));
+
+
+  // Function Reduce 
+
+  let removeChars = ["J","E","7","R","E","7","M","Y"];
+
+  let finalChars = removeChars.filter(function(ele) {
+    return !ele.startsWith("7");
+    
+
+  }).reduce(function(acc,current) {
+    return `${acc}${current}`;
+  });
+  console.log(finalChars);
