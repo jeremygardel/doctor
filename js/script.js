@@ -5,7 +5,7 @@ var clicklike = document.getElementById("clickme");
 var divy = document.getElementById("divs");
 var checkicon = document.getElementById("checki");
 var thumbsicon = document.getElementById("thumbsi");
-var contactbtnjs = document.getElementById("contactbtn");
+
 
 let loginpage = document.getElementById("popup");
 let loginbtn = document.getElementById("login-btn");
@@ -41,21 +41,17 @@ function onclicklike () {
 }
 clicklike.onclick = onclicklike;
 
-// Function On click on button contact
-function onclickcontact () {
-  contactbtnjs.innerText = '+201069797760';
+// Function on click on button contact (With ForEach ) 
+let onesBtn = document.querySelectorAll(".ones-btn");
+let contactNum = "+201069797760";
 
-}
-contactbtnjs.onclick = onclickcontact;
-
-
-// Pop Up Function & Close it
-function onclicklogin () {
-  loginpage.style.display = "block";
-
-}
-function onclickpopexit () {
-  loginpage.style.display = "none";
-}
-loginbtn.onclick = onclicklogin;
-popexit.onclick = onclickpopexit;
+onesBtn.forEach(function(ele) {
+  ele.onclick = function () {
+    if(ele.innerText === contactNum) {
+      ele.innerHTML = '<i class="fa fa-comment" aria-hidden="true"></i>Contact';
+    }
+    else {
+      ele.innerHTML = `<i class="fa fa-comment" aria-hidden="true"></i>${contactNum}`;
+    }
+  }
+});

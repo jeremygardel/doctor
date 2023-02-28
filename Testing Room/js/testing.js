@@ -435,3 +435,4 @@ function specialMix(...data) {
     return `${acc}${current}`;
   });
   console.log(finalChars);
+  
