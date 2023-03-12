@@ -56,14 +56,75 @@
             <div class="home-page"> <!--        Main Menu at the top     -->
                 <div class="overlay-home">
                     <div class="home-class">
-
-                        <h1>portofolo page</h1>
-                        <button class="home-btn">SUBSCRIBE</button>
-                    </div> <!-- HCLASS DIV -->
-                </div> <!-- Overlay Div -->
+                        <a class="tour-btn">Take Tour </a>
+                        <!-- <button class="home-btn">SUBSCRIBE</button> -->
+                    </div> 
+                    <button class="left-button" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="right-button" onclick="plusDivs(1)">&#10095;</button>
+<!--                              First Photo        -->
+                  <div class="first-download slideshow" style="display: block;">
+                    <div class="download-img">
+                      <img src="images/photographer.jpg" alt="Image 2" style="min-width:500px">
+                    </div>
+                    <div class="download-room">
+                      <div class="download-home">
+                        <h3> Take photos with our app</h3>
+                        <hr>
+                        <p>Super simple installment: free of charge</p>
+                        <p><button class="download-btn subscribe">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
+                      </div>
+                    </div>
+                  </div>    
+                   <!-- Second Photo      -->
+                   <div class="second-download slideshow" style="display:none;">
+                      <div class="download-img2">
+                        <img src="images/app2.jpg" alt="Image 2" style="min-width:500px" width="1500" height="1000">
+                      </div>
+                      <div class="download-room2">
+                        <div class="download-home2">
+                          <h3> CLICK! Fast and Easy</h3>
+                          <hr>
+                          <p>Choose from thousands of features</p>
+                          <p><button class="download-btn2 subscribe">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Third photo -->
+                    <div class="third-download slideshow" style="display: none;">
+                      <div class="download-img3">
+                        <img src="images/cake.jpeg" alt="Image 2" style="min-width:500px" width="1500" height="1000">
+                      </div>
+                      <div class="download-room3">
+                        <div class="download-home3">
+                          <h3> CLICK! Fast and Easy</h3>
+                          <hr>
+                          <p>Choose from thousands of features</p>
+                          <p><button class="download-btn3 subscribe">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div> <!-- Home Div -->
             
-            
+            <!--              Subscribe Page -->
+            <div class="subscribe-overlay" style="display: none;" >
+              <div class="subscribe-page" style="display: block;">
+                <a  class="pop-exit"><i class="fa fa-times"></i></a>
+                <h5>DOWNLOAD</h5>
+                <p>Download the app in AppStore, Google Play or Microsoft Store</p>
+                <p><i class="fa fa-android w3-large"></i><i class="fa fa-apple w3-large"></i><i class="fa fa-windows w3-large"></i></p>
+                <form>
+                  <input type="email" name="fname" placeholder="Enter your E-mail" required>
+                </form>
+                <button class="btn-subscribe" type="submit">Subscribe</button>
+                <p>© 2017–2022</p>
+              </div>
+              <div class="subscribe-done" style="display: none;">
+                <h5>THANK YOU!</h5>
+                <p>We've sent for your email confirmation</p>
+                <button class="btn-continueSub" type="submit">Continue</button>
+              </div>
+            </div>
             
             
 <!--                       About               -->
@@ -386,27 +447,27 @@
               <div class="tm-gallery">
                 <div class="tm-gallery-item">                        
                   <figure class="effect-bubba">
-                    <img src="images/01.jpg" alt="Our Work Image" class="img-fluid">
+                    <img src="images/zed1.jpg" alt="Our Work Image" class="img-fluid" width="240" height="370">
                     <figcaption class="img-1-caption">
-                      <h2>Fresh <span>Bubba</span></h2>
+                      <h2>Jeremy <span>Bubba</span></h2>
                       <p>Bubba likes to appear out of thin air.</p>
                     </figcaption>
                   </figure>
                 </div> <!--             Gallery   item     -->
                 <div class="tm-gallery-item">
                   <figure class="effect-bubba">
-                    <img src="images/02.jpg" alt="Our Work Image" class="img-fluid">
+                    <img src="images/shen.jpg" alt="Our Work Image" class="img-fluid" width="240" height="340">
                     <figcaption class="img-2-caption">
-                      <h2>Fresh <span>Bubba</span></h2>
+                      <h2>Shen <span>Bubba</span></h2>
                       <p>Bubba likes to appear out of thin air.</p>
                     </figcaption>
                   </figure>
                 </div> <!--            Gallery Item            -->
                 <div class="tm-gallery-item">
                   <figure class="effect-bubba">
-                    <img src="images/04.jpg" alt="Our Work Image" class="img-fluid">
+                    <img src="images/yasou.jpg" alt="Our Work Image" class="img-fluid" width="240" height="340">
                     <figcaption class="img-3-caption">
-                      <h2>Fresh <span>Bubba</span></h2>
+                      <h2>yasou <span>Bubba</span></h2>
                       <p>Bubba likes to appear out of thin air.</p>
                     </figcaption>
                   </figure>

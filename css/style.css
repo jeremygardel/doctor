@@ -97,20 +97,18 @@
 /*                                          Home Page                 */
 
 .home-page {
-    background-image: url(wallapaper.jpg);
+    /* background-image: url(photographer.jpg);
     background-size: cover;
     background-attachment: scroll;
-
+    animation: fadeIn 1s; */
 }
-.home-class {
-    
-    height: 95vh;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    
+.slideshow { 
+    animation: fadeIn 0.3s;
 }
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 .home-btn {
     border: none;
     display: inline-block;
@@ -140,13 +138,142 @@
     font-family: 'Varela Round', sans-serif;
 }
 .overlay-home {
-    
-    background-color: rgba(0,0,0,0.4);
+
+    background-color: rgba(0,0,0,0.1);
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
 }
+.home-class {
+    
+    /* height: 95vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center; */
+    position: absolute;
+    top: 70%;
+    right: 5%;
+    transform: translate(0%,-50%);
+    margin-right: 20px;
+    
+}
+
+.tour-btn {
+    border-radius: 4px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+}
+.tour-btn:hover {
+    color: black;
+    background-color: white;
+}
+.right-button, .left-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    color:white;
+    background-color: gray;
+}
+.right-button {
+    position: absolute;
+    top: 45%;
+    right: 0%;
+    transform: translate(0%,-50%);
+}
+.left-button {
+
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    transform: translate(0%,-50%);
+  
+}
+.left-button:hover, .right-button:hover {
+    color: white;
+    background-color: black;
+}
+.download-home, .download-home2, .download-home3 {
+    text-align: center!important;
+    color: white!important;
+    font-size: 16;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+
+}
+
+.download-room, .download-room2, .download-room3 {
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    width: 34%;
+    padding: 20px 10px;
+    border-radius: 7px;
+    background-color: rgba(0,0,0,0.5);
+    margin-left: 20px;
+    transition: background-color 0.3s;
+}
+.download-room:hover,
+.download-room2:hover,
+.download-room3:hover {
+    background-color: black;
+
+}
+
+.download-home h3, .download-home2 h3.download-home3 h3,  {
+    font-weight: 400;
+    margin: 10px 0;
+}
+.download-home p,.download-home2 p {
+    margin-bottom: 20px;
+}
+.download-btn {  background-color: #4CAF50; }
+.download-btn2 { background-color: red; }
+.download-btn3 { background-color: cyan; }
+.download-btn, .download-btn2, .download-btn3 {
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    padding: 8px 16px;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    width: 90%;
+    margin: auto;
+    transition: color 0.3s, background-color 0.3s;
+
+}
+.download-btn:hover,
+.download-btn2:hover,
+.download-btn3:hover {
+    background-color: white;
+    color:black;
+}
+/*  Photo 2 */
+
+.download-img img,
+.download-img2 img, 
+.download-img3 img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    
+}
+
+
 
 /*                                        About Page                     */
 .about-texts h5 {
@@ -617,7 +744,7 @@ el background bta3t el div el kbera... */
 /*---------------*/
 
 figure.effect-bubba {
-    background: #069;
+    background: grey
 }
   
 figure.effect-bubba img {
@@ -854,6 +981,103 @@ footer a {
 }
 
 
+/*                  Subscribe Pop */
+.subscribe-overlay {
+    position: fixed;
+    z-index: 3;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    line-height: 1.5;
+}
+.subscribe-page {
+    width: 900px;
+    background-color: white;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid lightgray;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 13%), 0 2px 10px 0 rgb(0 0 0 / 20%);
+    position: relative;
+    margin:auto;
+    opacity: 0.9;
+    padding: 32px;
+    animation: fadeIn 0.5s;
+}
+.subscribe-done { 
+    width: 900px;
+    background-color: white;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid lightgray;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 13%), 0 2px 10px 0 rgb(0 0 0 / 20%);
+    position: relative;
+    margin:auto;
+    opacity: 0.9;
+    padding: 32px;
+    animation: fadeIn 0.5s;
+}
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 0.9; }
+  }
+/* Exit of subscribe  */
+.pop-exit {  
+    position: absolute;
+    left: 90%;
+}
+.pop-exit:hover { cursor: pointer;}
+
+.subscribe-page h5 { margin: 35px 0 20px 0; }
+
+  .subscribe-page form {
+      display: flex;
+      flex-flow: column wrap;
+      align-content: center;
+      
+  }
+  .subscribe-page input {
+
+      text-align: left;
+      padding: 15px 40px;
+      box-sizing: border-box;
+      border: 3px solid #ccc;
+      transition: border 0.5s;
+      margin-top: 6px;
+      width: 100%;
+  }
+  .subscribe-page p i { margin-left: 4px; }
+  .subscribe-page input:hover { border: 3px solid #555; }
+  .subscribe-page .btn-subscribe {
+      margin-top: 30px;
+      border-radius: 6px;
+      padding: 10px 18px;
+      border: 0;
+      cursor:pointer;
+      font-size: 17;
+      text-align: center;
+      transition: background-color 0.5s;
+      background-color:deepskyblue;
+      width: 100%;
+  }
+  .subscribe-page p {
+      
+      text-align: center;
+      color: gray;
+      margin: 20px 0 10px 0;
+  }
+  .btn-subscribe:hover { background-color:skyblue; }
+
+  .subscribe-page a {
+      text-align: center;
+      text-decoration-line: none;
+      color: darkslategray;
+      font-size: 22px!important;
+  }
+
 
 /*                  Login - Page - Popup */
 .login-page {
@@ -870,9 +1094,9 @@ footer a {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     opacity: 0.9;
-    
       
 }
+
 .popexit {
     position: absolute;
     left: 90%;

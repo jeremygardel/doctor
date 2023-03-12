@@ -421,7 +421,7 @@ function specialMix(...data) {
   console.log(specialMix("10Test", "Testing", "20Cool"));
   console.log(specialMix("Testing", "10Testing", "40Cool")); 
   console.log(specialMix("Test", "Cool", "Test"));
-
+  
 
   // Function Reduce 
 

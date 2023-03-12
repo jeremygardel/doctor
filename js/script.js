@@ -55,3 +55,44 @@ onesBtn.forEach(function(ele) {
     }
   }
 });
+
+// Slideshow of the home page
+
+let tour = document.querySelector(".tour-btn");
+let x = document.querySelectorAll(".slideshow");
+
+let slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  let x = document.getElementsByClassName("slideshow");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (let i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+// Subscribe Popup
+let downloadBtn = document.querySelectorAll(".subscribe");
+let subscribeExit = document.querySelector(".pop-exit");
+let subscribe = document.querySelector(".subscribe-overlay");
+let subscribeBtn = document.querySelector(".btn-subscribe");
+let subscribePage = document.querySelector(".subscribe-page");
+let subscribeDone = document.querySelector(".subscribe-done");
+
+downloadBtn.forEach(function(ele) { ele.onclick = function () { subscribe.style.display = "block"; }
+
+});
+
+subscribeExit.onclick = function () { subscribe.style.display = "none"; }
+
+subscribeBtn.onclick = function () {
+  subscribeDone.style.display = "block";
+  subscribePage.style.display = "none";
+}
