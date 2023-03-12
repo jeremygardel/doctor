@@ -331,7 +331,7 @@ let mix = "A13BS2ZX";
 
 let mixResult = mix.split("").filter(function(ele){
 
-  return !isNaN(parseInt(ele));
+  return !isNaN(parseInt(ele));  // Is A number
 }).map(function(ele) {
   return ele * ele;
 }).join("");
@@ -425,7 +425,7 @@ function specialMix(...data) {
 
   // Function Reduce 
 
-  let removeChars = ["J","E","7","R","E","7","M","Y"];
+  let removeChars = ["J","e","7","r","e","7","m","y"];
 
   let finalChars = removeChars.filter(function(ele) {
     return !ele.startsWith("7");
@@ -435,4 +435,19 @@ function specialMix(...data) {
     return `${acc}${current}`;
   });
   console.log(finalChars);
+
+  // Task of higher older function  >>> Still not understand
+let myString = "1,2,3,EE,l,z,e,r,o,_,W,e,b,_,S,c,h,o,o,l,2,0,Z";
+
+let solution = myString.split("").filter(function (ele, i, arr) {
+    return isNaN(ele) && ele !== "," && i !== arr.length - true;
+  })
+  .map((ele) => ele)
+  .reduce(function (acc, current) {
+    return acc === current ? acc : acc + current;
+  })
+  .split("_")
+  .join(" ");
+
+console.log(solution); // Elzero web school
   
