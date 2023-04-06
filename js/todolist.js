@@ -115,3 +115,40 @@ function deleteitem(id) {
     }
 
 }
+
+//  Test
+
+let studentNames = ["John", "Emily", "Michael"];
+
+function addStudent() {
+    let input = document.getElementById("newStudentName");
+    let newStudent = input.value;
+    if (newStudent !== "") { //not empty
+        studentNames.push(newStudent);  // Add the new name taken from the input
+        input.value = "";
+        displayStudentNames();  // Let the function work also at if condition works
+    }
+}
+
+function deleteStudent(index) {  // Deleting Students
+    studentNames.splice(index, 1);
+    displayStudentNames(); // Let the function work also at if condition works
+}
+
+function displayStudentNames() {
+    let list = document.getElementById("studentList");
+    list.innerHTML = "";
+    for (let i = 0; i < studentNames.length; i++) {
+        let listItem = document.createElement("li");
+        listItem.innerText = studentNames[i];
+        let deleteButton = document.createElement("button");
+        deleteButton.innerText = "Delete";
+        deleteButton.addEventListener("click", function() {
+            deleteStudent(i);
+        });
+        listItem.appendChild(deleteButton);
+        list.appendChild(listItem);
+    }
+}
+
+displayStudentNames();

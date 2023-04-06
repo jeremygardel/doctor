@@ -20,6 +20,7 @@ const quotes = [
 function newQuote() {
   let randomQ = Math.floor(Math.random() * (quotes.length));
   divDisplay.innerHTML = quotes[randomQ];
+
   
 }
 window.onload = function() {
@@ -27,6 +28,7 @@ window.onload = function() {
   //newQuote(); ms7t de 3shan yzhar fe el awl el inner html fady
   btnDisplay.addEventListener('click', newQuote);
 }
+
 
 
 
