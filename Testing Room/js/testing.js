@@ -451,3 +451,107 @@ let solution = myString.split("").filter(function (ele, i, arr) {
 
 console.log(solution); // Elzero web school
   
+
+// My Own Test DOM
+// 1- Creating the main Div
+let mainDiv = document.createElement("div");
+mainDiv.style.cssText = "display:flex; padding: 10px; background-color: lighgtgray; justify-content: space-around; align-items: center;"
+mainDiv.classList.add("mainDiv");
+document.body.appendChild(mainDiv);
+// 2- Creating the div inside
+let secondDiv = document.createElement("div"); // Creating Element
+mainDiv.appendChild(secondDiv);  // Append the content div to the body
+secondDiv.classList.add("secondDiv"); // class name add
+secondDiv.style.cssText = "display: flex; padding: 10px; flex-wrap: wrap; justify-content: center; gap: 20px; min-height:calc(100vh - 142px); box-sizing: border-box;";
+// 2- Creating the elements inside the secondDiv
+for(let i = 0; i < 15; i++) {
+  let container = document.createElement("span");
+  container.style.cssText = "font-size: 40px; color: white; font-weight:normal; display: block; margin-bottom: 10px; margin-top: 10px; border: 1px solid rgb(221, 221, 221); width: calc((100% - 40px) / 3); text-align: center;";
+  secondDiv.appendChild(container);
+  container.textContent = i+1;
+  mainDiv.appendChild(secondDiv); 
+}
+
+
+//  DOM CHANELLGE
+
+
+// body styling
+document.body.style.cssText = "margin: 0px; background-color: rgb(236, 236, 236); font-family:Tahoma,Arial;";
+
+/* header */
+// create header
+let head = document.createElement("header");  // Creating Element 
+head.style.cssText = "display:flex; padding: 20px; background-color: rgb(255,255,255); justify-content: space-between; align-items : center;";
+// Css styling
+head.classList.add("website-head"); // Give it a classname
+document.body.appendChild(head); // Append the head to the body
+
+
+
+// The Text Inside the Header (logo)
+let logo = document.createElement("div"); // Creating Element
+logo.classList.add("logo"); // Give it a classname
+logo.title = "website logo";
+logo.style.cssText = "font-weight: bold; color:rgb(35, 169, 110); font- size: 26px;"; 
+logo.innerHTML = "Elzero"; // Text Inside this Div
+head.appendChild(logo);  // Append Logo to Head as its the main
+
+
+
+// The right contents
+let ul = document.createElement("ul"); // Creating ul Element right the page
+let headEle = ["Home", "About", "Service", "Contact"]; // The Contains of the li ' Array ' 
+for (i= 0;i< headEle.length;i++ ){  // Looping the Li for every element inside the array
+    let li = document.createElement("li"); // Creating every Li inside from the pervious array
+    li.style.margin = "5px";
+    li.style.color = "black";
+    li.innerHTML = headEle[i]; // Printing the Text of the selected Array
+    ul.appendChild(li); // Append Li as child of ul 
+}
+ul.classList.add("content"); // Giving Ul a classname
+ul.style.cssText = "paddig: 0px; margin: 0px; display: flex; list-style: none;";
+head.appendChild(ul); // Append the ul to head 
+
+/* body */
+// Creating the main Div of the Numbers
+let content = document.createElement("div"); // Creating Element
+document.body.appendChild(content);  // Append the content div to the body
+content.classList.add("content"); // class name add
+content.style.cssText = "display: flex; padding: 20px; flex-wrap: wrap; justify-content: center; gap: 20px; min-height:calc(100vh - 142px); box-sizing: border-box;";
+
+
+
+// Creaint the div of each number 
+for(i= 0;i< 15;i++){ // Looping for each number
+    let product = document.createElement("div"); // Creating product Element div
+    product.classList.add("product"); //class name add
+    product.style.cssText = "padding: 20px; background-color: lightgray; border: 1px solid rgb(221, 221, 221); width: calc((100% - 40px) / 3); box-sizing: border-box; text-align: center; color: rgb(136, 136, 136); border-radius: 6px";
+    let span = document.createElement("span");  // Creating span Element to type in
+    span.style.cssText = "font-size: 40px; color: black; font-weight:normal; display: block; margin-bottom: 10px; margin-top: 10px;";
+
+    span.textContent = i+1; // Every Number loops prints itself + 1 
+    product.appendChild(span); // Append Span for product on the div
+    product.append("Product");  // Text Under the div
+    content.appendChild(product); // Append product to the main body content
+}
+
+
+
+/* footer */
+
+
+
+// create footer
+let foot = document.createElement('footer');
+foot.classList.add("footer");
+foot.style.cssText = "background-color: rgb(35,169,110); font-size: 26px; text-align: center; padding: 20px; color: rgb(255,255,255);";
+foot.append("Copyright 2023 - Jeremy");
+document.body.appendChild(foot);
+  
+  
+  
+  
+  
+  
+  

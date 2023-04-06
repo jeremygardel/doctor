@@ -85,14 +85,31 @@ let subscribe = document.querySelector(".subscribe-overlay");
 let subscribeBtn = document.querySelector(".btn-subscribe");
 let subscribePage = document.querySelector(".subscribe-page");
 let subscribeDone = document.querySelector(".subscribe-done");
-
-downloadBtn.forEach(function(ele) { ele.onclick = function () { subscribe.style.display = "block"; }
+let subscribeCon = document.querySelector(".btn-continueSub");
+let inputSub = document.querySelector(".input-sub");
+downloadBtn.forEach(function(ele) { 
+  ele.onclick = function () { 
+    subscribe.style.display = "block"; 
+    subscribePage.style.display = "block";
+  }
 
 });
 
 subscribeExit.onclick = function () { subscribe.style.display = "none"; }
 
 subscribeBtn.onclick = function () {
-  subscribeDone.style.display = "block";
-  subscribePage.style.display = "none";
+  if(inputSub.value === "" ) {
+
+  }
+  else {
+    subscribeDone.style.display = "block";
+    subscribePage.style.display = "none";
+    inputSub.value = "";
+  }
+
+}
+
+subscribeCon.onclick = function () {
+  subscribeDone.style.display = "none";
+  subscribe.style.display = "none"; 
 }
