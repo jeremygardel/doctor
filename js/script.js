@@ -100,18 +100,16 @@ downloadBtn.forEach(function(ele) { ele.onclick = function () {
 subscribeExit.onclick = function () { subscribe.style.display = "none"; }
 
 subscribeBtn.onclick = function () {
-  if(subscribeEmail.value === "") {}
-  else {
-      if(subscribeEmail.value && subscribeEmail.value.contains('@'))
-      {
+  if(subscribeEmail.value === "") {
+  }
+  else if(subscribeEmail.value && subscribeEmail.value.contains('@')) {
+
         subscribeDone.style.display = "block";
         subscribePage.style.display = "none";
         subscribeEmail.value = "";
       }
+    }
 
-  }
-
-}
 subscribeContinue.onclick = function () { 
   subscribeDone.style.display = "none";
   subscribe.style.display = "none";
