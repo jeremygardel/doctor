@@ -115,7 +115,7 @@ chna<html>
                 <p>Download the app in AppStore, Google Play or Microsoft Store</p>
                 <p><i class="fa fa-android w3-large"></i><i class="fa fa-apple w3-large"></i><i class="fa fa-windows w3-large"></i></p>
                 <form>
-                  <input class="input-sub" type="email" name="fname" placeholder="Enter your E-mail" required>
+                  <input class="subscribe-email" type="email" name="fname" placeholder="Enter your E-mail" required>
                   <button class="btn-subscribe" type="submit">Subscribe</button>
                 </form>
 
@@ -297,7 +297,7 @@ chna<html>
                     <span class="reply-span-line"></span>
                   </div> <!--          Span           --> 
 
-                  <div class="content-left-reply" style="display: none;" id="divs">
+                  <div class="content-left-reply" style="display: flex;" id="divs">
 
                       <div class="reply-img">
                           <img src="images/george.jpg"/>
@@ -308,6 +308,20 @@ chna<html>
                         <p>Great blog post! Following you girl</p>
                       </div>   <!--            Reply Desc           -->
                   </div> <!--            content-left-reply           -->
+                  <div class="new-left-reply" style="display: block;">
+
+
+                    <form>
+                      <input class="reply-name" type="text" placeholder="Your Name" required/>
+                      <input class="reply-input" type="text" placeholder="Add your reply" required/>
+                      <button class="new-reply-btn reply-btn">Post</button>
+                      <button class="new-reply-btn clear-btn">Clear</button>
+                    </form>
+                  </div>
+                  <div class="new-reply-div"></div>
+                  <div class="reply-done" style="display: none;">
+                  <h6>Thank you!</h6>
+                  </div>
                 </div> <!--            Left Content             -->
                 
                   <div class="fashion-content-right">
