@@ -96,7 +96,7 @@ downloadBtn.forEach(function(ele) { ele.onclick = function () {
 }
 
 });
-
+// kk
 subscribeExit.onclick = function () { subscribe.style.display = "none"; }
 
 subscribeBtn.onclick = function () {
